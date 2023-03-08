@@ -9,6 +9,7 @@ import androidx.lifecycle.ViewModel
 import androidx.viewbinding.ViewBinding
 import daniel.lop.io.marvelappstarter.R
 
+
 abstract class BaseFragment <VB: ViewBinding, VM: ViewModel> : Fragment() {
 
     private var _binding: VB? = null

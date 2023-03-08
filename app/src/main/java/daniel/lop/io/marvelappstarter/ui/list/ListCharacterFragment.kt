@@ -5,10 +5,12 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
+import dagger.hilt.android.AndroidEntryPoint
 import daniel.lop.io.marvelappstarter.R
 import daniel.lop.io.marvelappstarter.databinding.FragmentListCharacterBinding
 import daniel.lop.io.marvelappstarter.ui.base.BaseFragment
 
+@AndroidEntryPoint
 class ListCharacterFragment : BaseFragment<FragmentListCharacterBinding, ListCharacterViewModel>() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
