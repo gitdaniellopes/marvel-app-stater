@@ -6,7 +6,7 @@ import java.io.Serializable
 
 data class CharacterModel(
     @SerializedName("id")
-    val id: Int,
+    var id: Int,
     @SerializedName("name")
     val name: String,
     @SerializedName("description")
