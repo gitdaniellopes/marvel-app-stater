@@ -1,7 +1,6 @@
 package daniel.lop.io.marvelappstarter.data.remote
 
-import daniel.lop.io.marvelappstarter.data.model.character.CharacterModelData
-import daniel.lop.io.marvelappstarter.data.model.comic.ComicModelData
+import daniel.lop.io.marvelappstarter.data.model.character.CharacterModelResponse
 import daniel.lop.io.marvelappstarter.data.model.comic.ComicModelResponse
 import retrofit2.Response
 import retrofit2.http.GET
@@ -13,7 +12,7 @@ interface ServiceApi {
     @GET("characters")
     suspend fun list(
         @Query("nameStartsWith") nameStartsWith: String? = null
-    ): Response<CharacterModelData>
+    ): Response<CharacterModelResponse>
 
     @GET("characters/{characterId}/comics")
     suspend fun getComics(
