@@ -11,7 +11,6 @@ import daniel.lop.io.marvelappstarter.ui.base.BaseFragment
 class SearchCharacterFragment: BaseFragment<FragmentSearchCharacterBinding, SearchCharacterViewModel>() {
     override val viewModel: SearchCharacterViewModel by viewModels()
 
-
     override fun getViewBinding(
         inflater: LayoutInflater,
         container: ViewGroup?

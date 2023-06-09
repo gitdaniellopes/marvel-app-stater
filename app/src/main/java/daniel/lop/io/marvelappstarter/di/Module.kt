@@ -10,7 +10,6 @@ import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 import timber.log.Timber
 import java.math.BigInteger
 import java.security.MessageDigest
@@ -34,7 +33,8 @@ object Module {
                     .addQueryParameter(Constants.TS, currentTimesTemp.toString())
                     .addQueryParameter(Constants.APIKEY, Constants.PUBLIC_KEY)
                     .addQueryParameter(Constants.HASH,
-                        provideToMd5Hash(currentTimesTemp.toString() + Constants.PRIVATE_KEY + Constants.PUBLIC_KEY))
+                        provideToMd5Hash(currentTimesTemp.toString() + Constants.PRIVATE_KEY +
+                                Constants.PUBLIC_KEY))
                             .build()
 
                 val newRequest = chain.request()
