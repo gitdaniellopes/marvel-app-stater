@@ -2,6 +2,7 @@ package daniel.lop.io.marvelappstarter.ui.search
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
+import dagger.hilt.android.lifecycle.HiltViewModel
 import daniel.lop.io.marvelappstarter.data.model.character.CharacterModelResponse
 import daniel.lop.io.marvelappstarter.repository.MarvelRepository
 import daniel.lop.io.marvelappstarter.state.ResourceState
@@ -12,6 +13,7 @@ import retrofit2.Response
 import java.io.IOException
 import javax.inject.Inject
 
+@HiltViewModel
 class SearchCharacterViewModel @Inject constructor(
     private val repository: MarvelRepository
 ) : ViewModel() {

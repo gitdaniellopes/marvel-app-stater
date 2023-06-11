@@ -14,6 +14,7 @@
             android:name="character"
             app:argType="daniel.lop.io.marvelappstarter.data.model.character.CharacterModel" />
     </fragment>
+
     <fragment
         android:id="@+id/favoriteCharacterFragment"
         android:name="daniel.lop.io.marvelappstarter.ui.favorite.FavoriteCharacterFragment"
@@ -23,6 +24,7 @@
             android:id="@+id/action_favoriteCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/searchCharacterFragment"
         android:name="daniel.lop.io.marvelappstarter.ui.search.SearchCharacterFragment"
@@ -32,6 +34,7 @@
             android:id="@+id/action_searchCharacterFragment_to_detailsCharacterFragment"
             app:destination="@id/detailsCharacterFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/listCharacterFragment"
         android:name="daniel.lop.io.marvelappstarter.ui.list.ListCharacterFragment"
