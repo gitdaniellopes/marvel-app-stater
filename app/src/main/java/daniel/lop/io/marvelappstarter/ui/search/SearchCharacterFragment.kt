@@ -36,7 +36,7 @@ class SearchCharacterFragment :
         setupRecycleView()
         clickAdapter()
 
-        //recuperando o status da instância trazendoo que o usuário digitou
+        //recuperando o status da instância trazendo que o usuário digitou
         val query = savedInstanceState?.getString(LAST_SEARCH_QUERY) ?: DEFAULT_QUERY
         searchInit(query)
         collectObserver()
